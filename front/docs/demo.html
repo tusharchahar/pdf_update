@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>pdf update demo</title>
+<link rel="stylesheet" href="demo.css" />
+</head>
+<body>
+<div class="error"></div>
+<form class="url_form">
+
+<button role="submit">Load PDF</button>
+</form>
+
+<form class="cur_file"></form>
+
+<form class="update_pdf"><button class="fill" disabled="disabled">Update PDF</button></form>
+
+<div class="pdf_frame">
+    <object 
+                width="80%"
+                height="500px"> 
+        </object> 
+</div>
+
+<form class="list_form">
+</form>
+
+<div class="loading">Loading</div>
+
+
+<!-- .. OR pdf.js (huge, but better compatibility).
+pdf.worker.js is slightly modified to export the actual classes we care about -->
+<script src="../../core/customlibs/pdf.worker.js"></script>
+<script src="../../core/minipdf_js.js"></script>
+<!-- <script src="../../core/minipdf.js"></script> -->
+
+
+<!-- pako and pdfform.js are required either way -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pako/1.0.3/pako.min.js" integrity="sha256-X7u/eQo6oIgWqc5jOmTjQn3loM8Lse0ock76Gkkn/Ro=" crossorigin="anonymous"></script>
+<script src="../../core/pdfform.js"></script>
+
+<!-- FileSaver.js is just needed for the demo, although you'll probably use it in some form as well -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.0.0/FileSaver.min.js"></script>
+
+<script src="demo.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+libs/
+test/
+docs/
+.eslintrc
+.npmignore
